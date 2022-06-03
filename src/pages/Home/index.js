@@ -34,7 +34,7 @@ function Home() {
                                                 bg-primary-light 
                                                 bg-cover 
                                                 bg-center
-                                                bg-homesl1-light                                                
+                                                bg-homesl1-dark                                                
                                                 `}
                                                 // style={{background: `url(${imgL})`}}
                                                 >
