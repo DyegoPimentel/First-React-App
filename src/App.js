@@ -19,15 +19,12 @@ function App() {
 
       <Navbar/>
 
-      <div className="container h-screen">
-        <Routes>
-
-            <Route exact path="/" element={<Home/>} />
-            <Route exact path="/contact" element={<Contact/>} />
-
-
-        </Routes>
-      </div>
+      
+      <Routes>
+          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/contact" element={<Contact/>} />
+      </Routes>
+      
       
       <Footer/>
     </Router>
