@@ -10,12 +10,12 @@ function DarkMode () {
     return (
         <div>
             {theme === "light" ? (
-                <div onClick={()=>setTheme("dark")} className="flex items-center">
+                <div onClick={ ()=> setTheme("dark")} className="flex items-center">
                     <MdNightlight/> 
                     <p className="ml-1.5 md:hidden">{i18n.t("c_darkmode.dark")}</p>
                 </div>
             ):(
-                <div onClick={()=>setTheme("light")} className="flex items-center">
+                <div onClick={()=> setTheme("light")} className="flex items-center">
                     <MdLightMode/> 
                     <p className="ml-1.5 md:hidden">{i18n.t("c_darkmode.light")}</p>
                 </div>

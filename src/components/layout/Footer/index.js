@@ -14,8 +14,8 @@ function Footer () {
     ]
 
     return (
-        <footer className="text-center p-4 items-center justify-center content-center place-content-center bg-gray-100 dark:text-white dark:bg-gray-dark" >
-            <div className="mr-4 mb-1 text-silver-theme hover:text-cyan-theme">
+        <footer className="text-center p-4 items-center justify-center content-center place-content-center bg-background-secondary-light dark:bg-background-secondary-dark " >
+            <div className="mr-4 mb-1 text-theme-gray-light dark:text-theme-gray-dark hover:text-theme-secondary-light dark:hover:text-theme-secondary-dark">
                 <a href="https://dyego-pimentel.gitbook.io/reactjs-study/" target="_blank" rel="noreferrer" title={i18n.t('c_footer.docs_alt')}>{i18n.t('c_footer.docs')}</a>
             </div>
             <ul className="flex list-none items-center text-center justify-center content-center text-2xl">
@@ -24,7 +24,7 @@ function Footer () {
                 {socialIcons.map((icons) => {
                     const {icon,url,alt} = icons
                     return(
-                        <li className="mr-4 text-silver-theme hover:text-cyan-theme" title={i18n.t(alt)}>
+                        <li className="mr-4 text-theme-gray-light dark:text-theme-gray-dark hover:text-theme-secondary-light dark:hover:text-theme-secondary-dark" title={i18n.t(alt)}>
                             <a href={url} target="_blank" rel="noreferrer">{icon}</a>
                         </li>
                     );

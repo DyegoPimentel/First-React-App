@@ -4,21 +4,26 @@
 }
 */
 
-.swiper-slide {
-    display: flex;
+.swiper-slide {   
+    
+
 }
 
 .swiper-pagination-bullet-active {
-    background-color: white;
+    /* background-color: white; */
+    @apply bg-theme-primary-light;
+    @apply dark:bg-theme-primary-dark;
 }
 
 .swiper-button-prev {
-    color: white ;
+    @apply text-theme-primary-light;
+    @apply dark:text-theme-primary-dark;
     padding-left: 2.5%;
 }
 
 .swiper-button-next {
-    color: white;
+    @apply text-theme-primary-light;
+    @apply dark:text-theme-primary-dark;
     padding-right: 2.5%;
 }
 

@@ -18,27 +18,27 @@ function Navbar () {
     let [open,setOpen]=useState(false);
     
     // Variable to put css in li tags wihtout repeat
-    let li_css = 'md:ml-4 md:my-0 my-7 text-white hover:text-blue-theme md:hover:text-cyan-theme cursor-pointer duration-500';
+    let li_css = 'md:ml-4 md:my-0 my-7 text-theme-white hover:text-theme-primary-light md:hover:text-theme-secondary-light cursor-pointer duration-500';
 
     return (
         <nav className="w-full sticky top-0 z-50">
-            <div className="flex items-center md:justify-between py-4 md:px-10 px-7 bg-blue-theme 
-            dark:bg-gray-dark" title={i18n.t("c_navbar.logo_alt")}>
+            <div className="flex items-center md:justify-between py-4 md:px-10 px-7 bg-theme-primary-light 
+            dark:bg-background-secondary-dark" title={i18n.t("c_navbar.logo_alt")}>
                 <Link to="/">
                     
-                    <h1 className="flex items-center font-roboto font-black text-2xl text-cyan-theme hover:text-white 
-                    dark:text-blue-theme dark:hover:text-white duration-500"
+                    <h1 className="flex items-center font-roboto font-black text-2xl text-theme-secondary-light hover:text-theme-white 
+                    dark:text-theme-secondary-dark dark:hover:text-theme-white duration-500"
                 >
-                    <MdHowToReg className="pr-1 text-3xl text-white"/>
+                    <MdHowToReg className="pr-1 text-3xl text-theme-white"/>
                     {i18n.t("c_navbar.logo")}</h1>
                 </Link>
 
                 {/* This set open or close the mobile navbar */}
-                <div onClick={()=>setOpen(!open)} className='text-2xl text-white hover:text-cyan-theme absolute right-8 top-5 cursor-pointer md:hidden duration-500'>
+                <div onClick={()=>setOpen(!open)} className='text-2xl text-theme-white hover:text-theme-secondary-light absolute right-8 top-5 cursor-pointer md:hidden duration-500'>
                     {open ? <MdClose title={i18n.t("c_navbar.close_menu")}/>:<MdMenu title={i18n.t("c_navbar.open_menu")}/>}
                 </div>
 
-                <ul className={`md:flex list-none md:items-center md:pb-0  absolute md:static bg-cyan-theme md:bg-transparent md:z-auto z-[-1] left-0 w-full md:w-auto h-screen md:h-auto md:pl-0 pl-9 md:pr-0 pr-9 transition-all duration-500 ease-in ${open ? 'top-[100%]':'hidden'}`}>
+                <ul className={`md:flex list-none md:items-center md:pb-0  absolute md:static bg-theme-secondary-light md:bg-transparent md:z-auto z-[-1] left-0 w-full md:w-auto h-screen md:h-auto md:pl-0 pl-9 md:pr-0 pr-9 transition-all duration-500 ease-in ${open ? 'top-[100%]':'hidden'}`}>
                     <li className={li_css} title={i18n.t("c_navbar.home_alt")}>
                         <Link to="/">
                             {i18n.t("c_navbar.home")}
